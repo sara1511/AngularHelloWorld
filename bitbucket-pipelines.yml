@@ -37,7 +37,6 @@ pipelines:
             script:
               - npm install
               - npm run build
-              - npm test
               - cd dist
               - apt update && apt install zip
               # Exclude files to be ignored
