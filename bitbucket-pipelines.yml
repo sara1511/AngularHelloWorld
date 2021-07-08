@@ -50,7 +50,7 @@ pipelines:
               # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
               - pipe: atlassian/git-secrets-scan:0.4.3
       - step:
-          name: Deploy to App Service $AZURE_APP_NAME
+          name: Deploy to App Service
 #          trigger: manual
           deployment: Production
           script:
