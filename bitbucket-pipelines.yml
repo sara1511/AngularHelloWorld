@@ -62,4 +62,4 @@ pipelines:
                 AZURE_RESOURCE_GROUP: $AZURE_RESOURCE_GROUP
                 AZURE_APP_NAME: $AZURE_APP_NAME
                 ZIP_FILE: app-$BITBUCKET_BUILD_NUMBER.zip
-                DEBUG: "true"
+#                DEBUG: "true"
