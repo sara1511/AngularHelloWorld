@@ -31,7 +31,7 @@ pipelines:
     master:
       - parallel:
         - step:
-            name: Build and Test
+            name: Build
             caches:
               - node
             script:
@@ -50,7 +50,7 @@ pipelines:
               # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
               - pipe: atlassian/git-secrets-scan:0.4.3
       - step:
-          name: Deploy to Production Alternative
+          name: Deploy to App Service $AZURE_APP_NAME
 #          trigger: manual
           deployment: Production
           script:
