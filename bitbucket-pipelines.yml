@@ -51,7 +51,7 @@ pipelines:
               - pipe: atlassian/git-secrets-scan:0.4.3
       - step:
           name: Deploy to Production Alternative
-          trigger: manual
+#          trigger: manual
           deployment: Production
           script:
             - pipe: microsoft/azure-web-apps-deploy:1.0.3
@@ -62,3 +62,4 @@ pipelines:
                 AZURE_RESOURCE_GROUP: $AZURE_RESOURCE_GROUP
                 AZURE_APP_NAME: $AZURE_APP_NAME
                 ZIP_FILE: app-$BITBUCKET_BUILD_NUMBER.zip
+                DEBUG: "true"
