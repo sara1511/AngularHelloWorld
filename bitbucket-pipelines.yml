@@ -37,8 +37,4 @@ pipelines:
                 AZURE_RESOURCE_GROUP: $AZURE_RESOURCE_GROUP
                 AZURE_APP_NAME: $AZURE_APP_NAME
                 ZIP_FILE: app-$BITBUCKET_BUILD_NUMBER.zip
-<<<<<<< HEAD
                 
-=======
-#                DEBUG: "true"
->>>>>>> 674d7ef30adcfd525a07fa5a3ab1b66b25d590f8
