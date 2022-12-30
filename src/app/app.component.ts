@@ -12,12 +12,7 @@ export class AppComponent implements OnInit {
   title = 'hello-world';
   constructor(private http: HttpClient){ }
 
-  requestOptions = {
-    headers: new HttpHeaders({
-     'Authorization': "my-request-token"
-    }),
-    withCredentials: true
-   };
+  requestOptions = { withCredentials: true };
 
   ngOnInit() {
     this.fetchAll();
